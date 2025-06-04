@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain_openai
+pydantic
+openai
+httpx
+sentence-transformers
+langchain-openai
+langchain-google-genai

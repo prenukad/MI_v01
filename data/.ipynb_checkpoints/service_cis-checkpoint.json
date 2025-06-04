@@ -1,0 +1,42 @@
+[
+    {
+      "ci_id": "CI10001",
+      "name": "CRM System",
+      "type": "Application",
+      "criticality": 5,
+      "dependencies": ["CI10002", "CI10003", "CI10004"],
+      "users": ["U001", "U002", "U003", "U004", "U005", "U006", "U007", "U008", "U009", "U010"]
+    },
+    {
+      "ci_id": "CI10002",
+      "name": "CRM Database",
+      "type": "Database",
+      "criticality": 5,
+      "dependencies": [],
+      "users": []
+    },
+    {
+      "ci_id": "CI10003",
+      "name": "CRM Web Server",
+      "type": "Server",
+      "criticality": 4,
+      "dependencies": [],
+      "users": []
+    },
+    {
+      "ci_id": "CI10004",
+      "name": "CRM Integration Service",
+      "type": "Application Component",
+      "criticality": 4,
+      "dependencies": ["CI10005"],
+      "users": []
+    },
+    {
+      "ci_id": "CI10005",
+      "name": "ERP System",
+      "type": "Application",
+      "criticality": 5,
+      "dependencies": [],
+      "users": ["U004", "U005", "U008", "U011", "U012"]
+    }
+  ]

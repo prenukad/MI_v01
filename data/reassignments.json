@@ -1,0 +1,21 @@
+[
+    {
+      "incident_id": "INC123456",
+      "timestamp": "2023-09-15T10:45:00",
+      "from_group": "Service Desk",
+      "to_group": "CRM Support"
+    },
+    {
+      "incident_id": "INC123456",
+      "timestamp": "2023-09-15T11:20:00",
+      "from_group": "CRM Support",
+      "to_group": "Database Team"
+    },
+    {
+      "incident_id": "INC123456",
+      "timestamp": "2023-09-15T12:05:00",
+      "from_group": "Database Team",
+      "to_group": "Network Team"
+    }
+  ]
+

@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Major Incident Detection</title>
+</head>
+<body>
+  <h1>Incident Analyzer</h1>
+  <form id="incident-form">
+    <label>Incident ID: <input type="text" name="incident_id" required /></label><br/>
+    <br/>
+    <label>Summary: <input type="text" name="summary" required /></label><br/>
+    <br/>
+    <label>Description: <textarea name="description" required></textarea></label><br/>
+    <br/>
+    <label>Service CI Name: <input type="text" name="service_ci_name" required /></label><br/>
+    <br/>
+    <label>Priority: <input type="number" name="priority" required /></label><br/>
+    <br/>
+    <label>Created At: <input type="datetime-local" name="created_at" required /></label><br/>
+    <br/>
+    <label>Status: <input type="text" name="status" required /></label><br/>
+    <br/>
+    <label>Assigned To: <input type="text" name="assigned_to" required /></label><br/>
+    <br/>
+    <label>Affected Users (comma-separated): <input type="text" name="affected_users" /></label><br/>
+    <br/>
+    <button type="submit">Analyze</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById("incident-form");
+    const resultDiv = document.getElementById("result");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      data.affected_users = data.affected_users.split(",").map(u => u.trim());
+      const response = await fetch("http://127.0.0.1:8000/analyze", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      if (result.error) {
+        resultDiv.textContent = "Error: " + result.error;
+      } else {
+        resultDiv.textContent = result.incident_id + ": " + (result.is_major_incident ? "Major Incident" : "Regular Incident");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+      "user_id": "U001",
+      "name": "John Smith",
+      "department": "Sales",
+      "is_vip": true
+    },
+    {
+      "user_id": "U002",
+      "name": "Sarah Johnson",
+      "department": "Sales",
+      "is_vip": false
+    },
+    {
+      "user_id": "U003",
+      "name": "Michael Brown",
+      "department": "Sales",
+      "is_vip": false
+    },
+    {
+      "user_id": "U004",
+      "name": "Emily Davis",
+      "department": "Finance",
+      "is_vip": true
+    },
+    {
+      "user_id": "U005",
+      "name": "Robert Wilson",
+      "department": "Finance",
+      "is_vip": false
+    },
+    {
+      "user_id": "U006",
+      "name": "Jennifer Taylor",
+      "department": "Marketing",
+      "is_vip": false
+    },
+    {
+      "user_id": "U007",
+      "name": "David Anderson",
+      "department": "Marketing",
+      "is_vip": false
+    },
+    {
+      "user_id": "U008",
+      "name": "Jessica Martinez",
+      "department": "Operations",
+      "is_vip": true
+    },
+    {
+      "user_id": "U009",
+      "name": "Christopher Thomas",
+      "department": "Customer Service",
+      "is_vip": false
+    },
+    {
+      "user_id": "U010",
+      "name": "Lisa Garcia",
+      "department": "Sales",
+      "is_vip": false
+    },
+    {
+      "user_id": "U011",
+      "name": "Daniel Rodriguez",
+      "department": "Finance",
+      "is_vip": false
+    },
+    {
+      "user_id": "U012",
+      "name": "Michelle Lewis",
+      "department": "Operations",
+      "is_vip": false
+    }
+  ]

@@ -1,0 +1,19 @@
+fastapi
+uvicorn
+langchain
+langchain_openai
+pydantic
+openai
+httpx
+
+pydantic
+sentence-transformers
+langchain-openai==<version>
+langchain==<version>
+langchain-google-genai
+
+
+#pip freeze > requirements.txt
+
+!pip3 install pydantic
+!pip3 install sentence-transformers

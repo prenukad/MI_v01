@@ -1,0 +1,38 @@
+[
+    {
+      "change_id": "CHG10001",
+      "summary": "CRM System Upgrade to v12.3",
+      "ci_id": "CI10001",
+      "implemented_at": "2023-09-10T23:00:00",
+      "risk_score": 0.8
+    },
+    {
+      "change_id": "CHG10002",
+      "summary": "CRM Database Index Optimization",
+      "ci_id": "CI10002",
+      "implemented_at": "2023-09-12T22:00:00",
+      "risk_score": 0.4
+    },
+    {
+      "change_id": "CHG10003",
+      "summary": "CRM Web Server Patching",
+      "ci_id": "CI10003",
+      "implemented_at": "2023-09-08T21:00:00",
+      "risk_score": 0.3
+    },
+    {
+      "change_id": "CHG10004",
+      "summary": "Network Configuration Change",
+      "ci_id": "CI10003",
+      "implemented_at": "2023-09-14T23:30:00",
+      "risk_score": 0.6
+    },
+    {
+      "change_id": "CHG10005",
+      "summary": "Integration Service Update",
+      "ci_id": "CI10004",
+      "implemented_at": "2023-09-13T22:15:00",
+      "risk_score": 0.7
+    }
+  ]
+  
