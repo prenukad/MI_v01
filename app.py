@@ -46,6 +46,11 @@ async def analyze_incident(incident_data: IncidentInput):
     except Exception as e:
         return {"error": str(e)}
 
-@app.get("/", response_class=HTMLResponse)
-async def root():
-    return "<h2>MI Detection API is running.</h2><p>Use POST /analyze to detect incidents.</p>"
+#@app.get("/", response_class=HTMLResponse)
+#async def root():
+#    return "<h2>MI Detection API is running.</h2><p>Use POST /analyze to detect incidents.</p>"
+
+
+@app.get("/")
+def read_root():
+    return {"message": "It works!"}
